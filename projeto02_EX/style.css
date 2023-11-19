@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+strong,
+a {
+  color: #3f3d56;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  width: 626px;
+  height: 486px;
+  margin: 64px auto;
+}
+
+h1 span {
+  color: #ed24ff;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+h1 {
+  color: #3f3d56;
+  font-family: "Dosis", sans-serif;
+  font-weight: normal;
+}
+
+p {
+  color: #828282;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+footer {
+  position: fixed;
+  width: 100vw;
+  height: 176px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+footer img.wave {
+  width: 100%;
+  height: 104px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+footer img.wave2 {
+  width: 100%;
+  height: 104px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+#links a:not(:first-child) {
+  position: relative;
+  margin-left: 42px;
+}
+
+/*ANIMAÇÃO*/
+
+@keyframes movimentoDaOnda {
+  0% {
+    bottom: -50px;
+  }
+
+  50% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: -50px;
+  }
+}
+
+@keyframes movimentoDaOnda2 {
+  0% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: -50px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+footer img.wave {
+  animation: movimentoDaOnda 20s infinite;
+  transition: all ease-in-out;
+}
+
+footer img.wave2 {
+  animation: movimentoDaOnda2 25s infinite;
+  transition: all ease-in-out;
+}
